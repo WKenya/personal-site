@@ -24,6 +24,6 @@ jobs:
       run: |
         npm ci
         npm run build-prod --if-present
-        npm test
+        npm run test-headless
       env:
         CI: true
