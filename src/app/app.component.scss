@@ -29,7 +29,7 @@ p {
     margin: -8px;
     display: flex;
     align-items: center;
-    background-color: #1976d2;
+    background-color: #60b0f4;
     color: white;
     font-weight: 600;
 }
@@ -38,12 +38,12 @@ p {
     margin: 0 16px;
 }
 
-.toolbar #twitter-logo {
+.toolbar #linkedin-logo {
     height: 40px;
     margin: 0 16px;
 }
 
-.toolbar #twitter-logo:hover {
+.toolbar #linkedin-logo:hover {
     opacity: 0.8;
 }
 
@@ -284,7 +284,11 @@ svg#clouds {
     }
 }
 
-.logo {
+.logo-formatting {
     width: 50px;
     height: 50px;
+    margin-left: 10px;
+    background: white;
+    padding: 2px;
+    border-radius: 30px;
 }
