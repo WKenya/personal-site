@@ -9,6 +9,7 @@ export class CardComponent implements OnInit
 {
     @Input() public label: string;
     @Input() public href: string;
+    @Input() public iconName: string;
 
     constructor() { }
 

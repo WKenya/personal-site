@@ -25,6 +25,11 @@
     line-height: 24px;
 }
 
+a:-webkit-any-link{
+    text-decoration: none;
+    color: inherit;
+}
+
 .card-container .card:not(:last-child) {
     margin-right: 0;
 }
