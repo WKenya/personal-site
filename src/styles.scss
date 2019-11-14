@@ -1,6 +1,6 @@
-@import '~@angular/material/theming';
-@import './palette.scss';
-@import './theme.scss';
+@import "~@angular/material/theming";
+@import "./palette.scss";
+@import "./theme.scss";
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -12,8 +12,6 @@
 // hue. Available color palettes: https://material.io/design/color/
 $personal-site-primary: mat-palette($site-primary);
 $personal-site-accent: mat-palette($site-accent);
-
-// The warn palette is optional (defaults to red).
 $personal-site-warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
@@ -24,15 +22,20 @@ $personal-site-theme: mat-light-theme($personal-site-primary, $personal-site-acc
 // that you are using.
 @include angular-material-theme($personal-site-theme);
 
-/* You can add global styles to this file, and also import other style files */
+// Define an alternate dark theme.
+$dark-primary: mat-palette($site-primary);
+$dark-accent: mat-palette($site-accent, A200, A100, A400);
+$dark-warn: mat-palette($mat-red);
+$dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
 
-html, body { 
-    height: 100%; 
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-body { 
-    margin: 0; 
+body {
+  margin: 0;
 }

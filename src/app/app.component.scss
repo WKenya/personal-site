@@ -26,7 +26,7 @@ p {
 .toolbar__site-logo {
     width: 50px;
     height: 50px;
-    margin-left: 10px;
+    margin: 0px 10px;
     background: white;
     padding: 2px;
     border-radius: 30px;
@@ -34,6 +34,14 @@ p {
 
 .toolbar__logo {
     height: 24px;
+}
+
+.router {
+    margin-right: 4px;
+}
+
+.router__button {
+    margin: 0px 6px;
 }
 
 .content {
