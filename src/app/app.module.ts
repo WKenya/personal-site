@@ -9,11 +9,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
-
+import { HomeComponent } from './view/home/home.component';
+import { UnknownComponent } from './view/unknown/unknown.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        HomeComponent,
+        UnknownComponent
     ],
     imports: [
         BrowserModule,
@@ -23,7 +27,8 @@ import { MatIconModule } from '@angular/material/icon';
         MatToolbarModule,
         MatButtonModule,
         MatSlideToggleModule,
-        MatIconModule
+        MatIconModule,
+        FlexLayoutModule
     ],
     providers: [],
     bootstrap: [AppComponent]

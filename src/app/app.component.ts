@@ -8,15 +8,14 @@ import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 })
 export class AppComponent implements OnInit
 {
-    title = 'Wesley Kenyon';
-
     constructor() { }
 
     ngOnInit()
     {
     }
 
-    onThemeChanged($event: MatSlideToggleChange): void {
+    onThemeChanged($event: MatSlideToggleChange): void
+    {
         if ($event.checked)
         {
             // document.getElementById('themeAsset').href = `/path/to/my/${themeName}.css`;

@@ -10,9 +10,3 @@
     // Define any styles affected by the theme.
     // Use mat-color to extract individual colors from a palette.
 }
-
-$custom-typography: mat-typography-config(
-    $font-family: 'Roboto, monospace',
-    $headline: mat-typography-level(32px, 48px, 700),
-    $body-1: mat-typography-level(14px, 24px, 500)
-)
