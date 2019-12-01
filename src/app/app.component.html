@@ -7,10 +7,10 @@
         <div class="router">
             <button class="router__button" mat-raised-button color="accent" [routerLink]="['/']">Home</button>
             <button class="router__button" mat-raised-button color="accent" [routerLink]="['/about']">About</button>
-            <button class="router__button" mat-raised-button color="accent" [routerLink]="['/projects']">Projects</button>
+            <button [style.display]="'none'" class="router__button" mat-raised-button color="accent" [routerLink]="['/projects']">Projects</button>
             <button class="router__button" mat-raised-button color="accent" [routerLink]="['/contact']">Contact</button>
         </div>
-        <div>
+        <div [style.display]="'none'">
             <mat-icon class="material-icons">highlight</mat-icon>
             <mat-slide-toggle (change)="onThemeChanged($event)"></mat-slide-toggle>
         </div>
