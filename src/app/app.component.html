@@ -1,20 +1,24 @@
 <div fxFill fxLayout="column">
     <mat-toolbar class="toolbar" color="primary">
-        <svg class="toolbar__site-logo" width="50" height="50" viewBox="0 0 167 167" xmlns="http://www.w3.org/2000/svg">
-            <image id="svg-logo" href="./assets/Logo.svg" />
-        </svg>
-        <div class="toolbar__spacer"></div>
-        <div class="router">
-            <button class="router__button" mat-raised-button color="accent" [routerLink]="['/']">Home</button>
-            <button class="router__button" mat-raised-button color="accent" [routerLink]="['/about']">About</button>
-            <button [style.display]="'none'" class="router__button" mat-raised-button color="accent" [routerLink]="['/projects']">Projects</button>
-            <button class="router__button" mat-raised-button color="accent" [routerLink]="['/contact']">Contact</button>
-        </div>
-        <div [style.display]="'none'">
-            <mat-icon>highlight</mat-icon>
-            <mat-slide-toggle (change)="onThemeChanged($event)"></mat-slide-toggle>
-        </div>
-
+        <mat-toolbar-row>
+            <svg class="toolbar__site-logo" width="50" height="50" viewBox="0 0 167 167"
+                xmlns="http://www.w3.org/2000/svg">
+                <image id="svg-logo" href="./assets/Logo.svg" />
+            </svg>
+            <div class="toolbar__spacer"></div>
+            <div class="router">
+                <button class="router__button" mat-raised-button color="accent" [routerLink]="['/']">Home</button>
+                <button class="router__button" mat-raised-button color="accent" [routerLink]="['/about']">About</button>
+                <button [style.display]="'none'" class="router__button" mat-raised-button color="accent"
+                    [routerLink]="['/projects']">Projects</button>
+                <button class="router__button" mat-raised-button color="accent"
+                    [routerLink]="['/contact']">Contact</button>
+            </div>
+            <div [style.display]="'none'">
+                <mat-icon>highlight</mat-icon>
+                <mat-slide-toggle (change)="onThemeChanged($event)"></mat-slide-toggle>
+            </div>
+        </mat-toolbar-row>
     </mat-toolbar>
 
     <router-outlet></router-outlet>
