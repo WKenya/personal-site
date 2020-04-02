@@ -24,6 +24,20 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+# Docker
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Running through a container
+
+If you want to run your local code on the docker container then run the command with the proper image tag:
+
+`docker run -v ${PWD}:/app -v /app/node_modules -p 4201:4200 --rm {image_tag}`
+
+If you want to just run the site using docker, then run the command with the proper image tag:
+
+`docker container run --publish 4201:4200 --name personal-site {image_tag}`
+
+## Building an image
+
+If you want to build a new image of this then run the following command an specify the new image name with the version:
+
+`docker image build -t {image_tag} .`
