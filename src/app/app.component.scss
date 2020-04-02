@@ -10,15 +10,15 @@ h6 {
 p {
     margin: 0;
 }
+.container {
+    min-height: 100%;
+    min-width: 100%;
+}
 
 .toolbar {
     display: flex;
     align-items: center;
     font-weight: 600;
-}
-
-.toolbar__row {
-    height: 64px;
 }
 
 .toolbar__spacer {
@@ -61,17 +61,10 @@ a:hover {
 }
 
 footer {
-    margin-top: 8px;
     display: flex;
-    align-items: center;
+    justify-content: center;
     line-height: 20px;
 }
-
-footer a {
-    display: flex;
-    align-items: center;
-}
-
 
 svg#clouds {
     position: fixed;
